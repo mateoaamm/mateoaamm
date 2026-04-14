@@ -37,7 +37,7 @@ Me caracterizo por construir productos bien estructurados desde la primera versi
 
 **Título Profesional — Ingeniero de Sistemas**
 
-<img src="https://raw.githubusercontent.com/mateoaamm/mateoaamm/main/titulo_profesional.jpg" width="680" alt="Título Profesional - Ingeniero de Sistemas"/>
+<img src="https://raw.githubusercontent.com/mateoaamm/mateoaamm/main/titulo profesional.jpg" width="680" alt="Título Profesional - Ingeniero de Sistemas"/>
 
 <br/><br/>
 
