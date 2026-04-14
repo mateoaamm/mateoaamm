@@ -1,16 +1,59 @@
-## Hi there 👋
+<div align="center">
+  <img src="https://github.com/mateoaamm/mateoaamm/blob/main/foto_perfil.png?raw=true" 
+       width="130" style="border-radius: 50%;" alt="Mateo Arroyave"/>
 
-<!--
-**mateoaamm/mateoaamm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+  # Mateo Arroyave Martínez
+  ### Ingeniero de Sistemas · Full Stack Developer
 
-Here are some ideas to get you started:
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mateo-arroyave-57765b391/)
+  [![Email](https://img.shields.io/badge/Email-0078D4?style=flat&logo=microsoftoutlook&logoColor=white)](mailto:mate_oam@hotmail.com)
+  [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=vercel&logoColor=white)](#)
+</div>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 👨‍💻 Sobre mí
+
+Ingeniero de Sistemas graduado de la **Universidad Libre Seccional Pereira** (2026).  
+Desarrollo soluciones de software completas y listas para producción — desde sistemas de punto de venta hasta plataformas web empresariales.  
+Actualmente asociado con **Asgard Labs** y con experiencia en clientes internacionales (USA).
+
+---
+
+## 🛠️ Stack Tecnológico
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+![Electron](https://img.shields.io/badge/Electron-47848F?style=flat&logo=electron&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+
+---
+
+## 🚀 Proyectos Destacados
+
+| Proyecto | Descripción | Stack |
+|---|---|---|
+| [Variedades Nacho](https://github.com/mateoaamm/variedades-nacho) | Sistema POS + gestión de arriendos con impresión térmica | Electron, Node.js |
+| [ProtectGo](https://github.com/mateoaamm/protectgo-web) | Web para aseguradora de camioneros en USA | Next.js 14, FastAPI |
+| [Portafolio](https://github.com/mateoaamm/portafoliomateo) | Carta de presentación profesional | React |
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+  <img height="150" src="https://github-readme-stats.vercel.app/api?username=mateoaamm&show_icons=true&theme=default&hide_border=true&count_private=true"/>
+  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mateoaamm&layout=compact&theme=default&hide_border=true"/>
+</div>
+
+---
+
+<div align="center">
+  <sub>📍 Pereira, Colombia · Disponible para proyectos freelance</sub>
+</div>
