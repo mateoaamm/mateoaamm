@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/mateoaamm/mateoaamm/blob/main/foto_perfil.png?raw=true" 
+  <img src="https://raw.githubusercontent.com/mateoaamm/mateoaamm/main/foto%20perfil.png" 
        width="130" style="border-radius: 50%;" alt="Mateo Arroyave"/>
 
   # Mateo Arroyave Martínez
