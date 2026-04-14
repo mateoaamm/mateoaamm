@@ -3,7 +3,7 @@
        width="130" style="border-radius: 50%;" alt="Mateo Arroyave"/>
 
   # Mateo Arroyave Martínez
-  ### Ingeniero de Sistemas · Full Stack Developer
+  ### Systems Engineer · Full Stack Developer
 
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mateo-arroyave-57765b391/)
   [![Email](https://img.shields.io/badge/Email-0078D4?style=flat&logo=microsoftoutlook&logoColor=white)](mailto:mate_oam@hotmail.com)
@@ -14,9 +14,17 @@
 
 ## 👨‍💻 Sobre mí
 
-Ingeniero de Sistemas graduado de la **Universidad Libre Seccional Pereira** (2026).  
-Desarrollo soluciones de software completas y listas para producción — desde sistemas de punto de venta hasta plataformas web empresariales.  
-Actualmente asociado con **Asgard Labs** y con experiencia en clientes internacionales (USA).
+Ingeniero de Sistemas graduado de la **Universidad Libre Seccional Pereira** (2026), con enfoque en el desarrollo de soluciones de software completas, funcionales y listas para producción.
+
+
+---
+
+## 🎓 Formación
+
+| Título | Institución | Año |
+|---|---|---|
+| Ingeniero de Sistemas | Universidad Libre Seccional Pereira | 2026 |
+| Diplomado — Inteligencia Artificial Aplicada | Universidad Libre · Facultad de Ingeniería | 2026 |
 
 ---
 
@@ -39,9 +47,12 @@ Actualmente asociado con **Asgard Labs** y con experiencia en clientes internaci
 
 | Proyecto | Descripción | Stack |
 |---|---|---|
-| [Variedades Nacho](https://github.com/mateoaamm/variedades-nacho) | Sistema POS + gestión de arriendos con impresión térmica | Electron, Node.js |
-| [ProtectGo](https://github.com/mateoaamm/protectgo-web) | Web para aseguradora de camioneros en USA | Next.js 14, FastAPI |
-| [Portafolio](https://github.com/mateoaamm/portafoliomateo) | Carta de presentación profesional | React |
+| [Variedades Nacho](https://github.com/mateoaamm/variedades-nacho) | Sistema POS + gestión de arriendos con impresión térmica 80mm | Electron, Node.js |
+| [ProtectGo](https://github.com/mateoaamm/protectgo-web) | Plataforma web para aseguradora de camioneros en EE.UU. | Next.js 14, FastAPI |
+| [Musical Match](https://github.com/mateoaamm/musical-match) | Plataforma de contratación de artistas para eventos | TypeScript |
+| [Optimización de Recursos](https://github.com/mateoaamm/proyectoOptimizacionRecursos2) | Proyecto académico de algoritmos de optimización | Python |
+| [Métodos Numéricos](https://github.com/mateoaamm/proyectoFinalMetodNum) | Implementación de métodos numéricos aplicados | HTML, Python |
+| [Portafolio Personal](https://github.com/mateoaamm/portafoliomateo) | Carta de presentación profesional | React |
 
 ---
 
