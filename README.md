@@ -22,10 +22,10 @@ Ingeniero de Sistemas graduado de la **Universidad Libre**
 
 ## 🎓 Formación
 
-| Título | Institución | Año |
+| Título | Institución |
 |---|---|---|
 | Ingeniero de Sistemas | Universidad Libre | 
-| Diplomado en Inteligencia Artificial Aplicada| Universidad Libre · Facultad de Ingeniería |
+| Diplomado en Inteligencia Artificial Aplicada| Universidad Libre|
 
 ---
 
