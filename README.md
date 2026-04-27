@@ -1,9 +1,8 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/mateoaamm/mateoaamm/main/foto%20perfil.png" width="130" style="border-radius: 50%;" alt="Mateo Arroyave"/>
+<img src="https://raw.githubusercontent.com/mateoaamm/mateoaamm/main/foto%20perfil.png" width="130" style="border-radius:50%;" alt="Mateo Arroyave"/>
 
 # Mateo Arroyave Martínez
-
 ### Ingeniero de Sistemas · Full Stack Developer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mateo-arroyave-57765b391/)
@@ -16,17 +15,16 @@
 
 ## 👨‍💻 Sobre mí
 
-Ingeniero de Sistemas 
-**Universidad Libre Seccional Pereira**
+Ingeniero de Sistemas **Universidad Libre Seccional Pereira** 
 
 ---
 
 ## 🎓 Formación
 
-| Título | Institución 
-| --- | ---
-| Ingeniero de Sistemas | Universidad Libre
-| Diplomado en Inteligencia Artificial Aplicada  | Universidad Libre
+| Título | Institución | Año |
+| --- | --- | --- |
+| Ingeniero de Sistemas | Universidad Libre Seccional Pereira | 2026 |
+| Diplomado en Inteligencia Artificial Aplicada · 120h | Universidad Libre · Facultad de Ingeniería | 2026 |
 
 ---
 
