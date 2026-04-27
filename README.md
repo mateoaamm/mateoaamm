@@ -16,18 +16,17 @@
 
 ## 👨‍💻 Sobre mí
 
-Ingeniero de Sistemas graduado de la **Universidad Libre Seccional Pereira** (2026), con enfoque en el desarrollo de soluciones de software completas, funcionales y listas para producción.
-
-Cuento con experiencia en proyectos académicos y comerciales, trabajando con clientes en Colombia y Estados Unidos. Actualmente asociado con **Asgard Labs**, donde participo en el diseño y desarrollo de plataformas web, sistemas de gestión empresarial y automatización de procesos.
+Ingeniero de Sistemas 
+**Universidad Libre Seccional Pereira**
 
 ---
 
 ## 🎓 Formación
 
-| Título | Institución | Año |
-| --- | --- | --- |
-| Ingeniero de Sistemas | Universidad Libre Seccional Pereira | 2026 |
-| Diplomado en Inteligencia Artificial Aplicada · 120h | Universidad Libre · Facultad de Ingeniería | 2026 |
+| Título | Institución 
+| --- | ---
+| Ingeniero de Sistemas | Universidad Libre
+| Diplomado en Inteligencia Artificial Aplicada · 120h | Universidad Libre
 
 ---
 
