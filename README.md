@@ -26,7 +26,7 @@ Ingeniero de Sistemas
 | Título | Institución 
 | --- | ---
 | Ingeniero de Sistemas | Universidad Libre
-| Diplomado en Inteligencia Artificial Aplicada · 120h | Universidad Libre
+| Diplomado en Inteligencia Artificial Aplicada  | Universidad Libre
 
 ---
 
