@@ -63,7 +63,7 @@
 | Proyecto | Descripción | Stack |
 |---|---|---|
 | [Variedades Nacho](https://github.com/mateoaamm/variedades-nacho) | Sistema POS + gestión de arriendos con impresión térmica 80mm | Electron, Node.js |
-| [ProtectGo](https://github.com/mateoaamm/protectgo-web) | Plataforma web para aseguradora de camioneros en EE.UU. | Next.js 14, FastAPI |
+
 | [Musical Match](https://github.com/mateoaamm/musical-match) | Plataforma de contratación de artistas para eventos | TypeScript |
 | [Optimización de Recursos](https://github.com/mateoaamm/proyectoOptimizacionRecursos2) | Algoritmos de optimización aplicados | Python |
 | [Métodos Numéricos](https://github.com/mateoaamm/proyectoFinalMetodNum) | Implementación de métodos numéricos | HTML, Python |
