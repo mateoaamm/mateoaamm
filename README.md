@@ -1,18 +1,24 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/mateoaamm/mateoaamm/main/foto%20perfil.png"
-       width="130" style="border-radius: 50%;" alt="Mateo Arroyave"/>
 
-  # Mateo Arroyave Martínez
-  ### Ingeniero de Sistemas · Full Stack Developer
+<img src="https://raw.githubusercontent.com/mateoaamm/mateoaamm/main/foto%20perfil.png" width="130" style="border-radius: 50%;" alt="Mateo Arroyave"/>
 
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mateo-arroyave-57765b391/)
-  [![Email](https://img.shields.io/badge/Email-0078D4?style=flat&logo=microsoftoutlook&logoColor=white)](mailto:mate_oam@hotmail.com)
-  [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=vercel&logoColor=white)](#)
+# Mateo Arroyave Martínez
+
+### Ingeniero de Sistemas · Full Stack Developer
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mateo-arroyave-57765b391/)
+[![Email](https://img.shields.io/badge/Email-0078D4?style=flat&logo=microsoftoutlook&logoColor=white)](mailto:mate_oam@hotmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat&logo=vercel&logoColor=white)](https://mateoaamm.github.io/mateoaamm/)
+
 </div>
 
 ---
 
 ## 👨‍💻 Sobre mí
+
+Ingeniero de Sistemas graduado de la **Universidad Libre Seccional Pereira** (2026), con enfoque en el desarrollo de soluciones de software completas, funcionales y listas para producción.
+
+Cuento con experiencia en proyectos académicos y comerciales, trabajando con clientes en Colombia y Estados Unidos. Actualmente asociado con **Asgard Labs**, donde participo en el diseño y desarrollo de plataformas web, sistemas de gestión empresarial y automatización de procesos.
 
 ---
 
@@ -20,8 +26,8 @@
 
 | Título | Institución | Año |
 |---|---|---|
-| Ingeniero de Sistemas | Universidad Libre| 2026 |
-| Diplomado en Inteligencia Artificial Aplicada | Universidad Libre · Facultad de Ingeniería | 2026 |
+| Ingeniero de Sistemas | Universidad Libre Seccional Pereira | 2026 |
+| Diplomado en Inteligencia Artificial Aplicada · 120h | Universidad Libre · Facultad de Ingeniería | 2026 |
 
 ---
 
@@ -31,7 +37,7 @@
 
 **Título Profesional — Ingeniero de Sistemas**
 
-<img src="https://raw.githubusercontent.com/mateoaamm/mateoaamm/main/titulo profesional.jpg" width="680" alt="Título Profesional - Ingeniero de Sistemas"/>
+<img src="https://raw.githubusercontent.com/mateoaamm/mateoaamm/main/titulo_profesional.jpg" width="680" alt="Título Profesional"/>
 
 <br/><br/>
 
@@ -63,7 +69,7 @@
 | Proyecto | Descripción | Stack |
 |---|---|---|
 | [Variedades Nacho](https://github.com/mateoaamm/variedades-nacho) | Sistema POS + gestión de arriendos con impresión térmica 80mm | Electron, Node.js |
-
+| [ProtectGo](https://github.com/mateoaamm/protectgo-web) | Plataforma web para aseguradora de camioneros en EE.UU. | Next.js 14, FastAPI |
 | [Musical Match](https://github.com/mateoaamm/musical-match) | Plataforma de contratación de artistas para eventos | TypeScript |
 | [Optimización de Recursos](https://github.com/mateoaamm/proyectoOptimizacionRecursos2) | Algoritmos de optimización aplicados | Python |
 | [Métodos Numéricos](https://github.com/mateoaamm/proyectoFinalMetodNum) | Implementación de métodos numéricos | HTML, Python |
@@ -81,5 +87,5 @@
 ---
 
 <div align="center">
-  <sub>📍 Pereira, Colombia · </sub>
+  <sub>📍 Pereira, Colombia · Disponible para proyectos freelance</sub>
 </div>
