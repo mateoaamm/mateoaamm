@@ -16,7 +16,8 @@
 
 ## 👨‍💻 Sobre mí
 
-Ingeniero de Sistemas graduado de la **Universidad Libre**
+Ingeniero de Sistemas
+**Universidad Libre**
 
 ---
 
