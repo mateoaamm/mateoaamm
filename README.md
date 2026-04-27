@@ -16,9 +16,7 @@
 
 ## 👨‍💻 Sobre mí
 
-Ingeniero de Sistemas graduado de la **Universidad Libre Seccional Pereira** (2026), con enfoque en el desarrollo de soluciones de software completas, funcionales y listas para producción.
-
-Cuento con experiencia en proyectos académicos y comerciales, trabajando con clientes en Colombia y Estados Unidos. Actualmente asociado con **Asgard Labs**, donde participo en el diseño y desarrollo de plataformas web, sistemas de gestión empresarial y automatización de procesos.
+Ingeniero de Sistemas graduado de la **Universidad Libre**
 
 ---
 
@@ -26,8 +24,8 @@ Cuento con experiencia en proyectos académicos y comerciales, trabajando con cl
 
 | Título | Institución | Año |
 |---|---|---|
-| Ingeniero de Sistemas | Universidad Libre Seccional Pereira | 2026 |
-| Diplomado en Inteligencia Artificial Aplicada · 120h | Universidad Libre · Facultad de Ingeniería | 2026 |
+| Ingeniero de Sistemas | Universidad Libre | 
+| Diplomado en Inteligencia Artificial Aplicada ·| Universidad Libre · Facultad de Ingeniería |
 
 ---
 
@@ -68,7 +66,7 @@ Cuento con experiencia en proyectos académicos y comerciales, trabajando con cl
 
 | Proyecto | Descripción | Stack |
 |---|---|---|
-| [Variedades Nacho](https://github.com/mateoaamm/variedades-nacho) | Sistema POS + gestión de arriendos con impresión térmica 80mm | Electron, Node.js |
+| [Variedades Nacho](https://github.com/mateoaamm/variedades-nacho) | Sistema POS + gestión de arriendos con impresión térmica | Electron, Node.js |
 | [ProtectGo](https://github.com/mateoaamm/protectgo-web) | Plataforma web para aseguradora de camioneros en EE.UU. | Next.js 14, FastAPI |
 | [Musical Match](https://github.com/mateoaamm/musical-match) | Plataforma de contratación de artistas para eventos | TypeScript |
 | [Optimización de Recursos](https://github.com/mateoaamm/proyectoOptimizacionRecursos2) | Algoritmos de optimización aplicados | Python |
