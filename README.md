@@ -14,10 +14,7 @@
 
 ## 👨‍💻 Sobre mí
 
-Ingeniero de Sistemas graduado de la **Universidad Libre Seccional Pereira** (2026), con enfoque en el desarrollo de soluciones de software completas, funcionales y listas para producción.
-
-
-Me caracterizo por construir productos bien estructurados desde la primera versión, con documentación clara y visión de escalabilidad.
+Ingeniero de Sistemas graduado de la **Universidad Libre Seccional** (2026), con enfoque en el desarrollo de soluciones de software completas, funcionales y listas para producción.
 
 ---
 
@@ -25,8 +22,8 @@ Me caracterizo por construir productos bien estructurados desde la primera versi
 
 | Título | Institución | Año |
 |---|---|---|
-| Ingeniero de Sistemas | Universidad Libre Seccional Pereira | 2026 |
-| Diplomado en Inteligencia Artificial Aplicada · 120h | Universidad Libre · Facultad de Ingeniería | 2026 |
+| Ingeniero de Sistemas | Universidad Libre| 2026 |
+| Diplomado en Inteligencia Artificial Aplicada | Universidad Libre · Facultad de Ingeniería | 2026 |
 
 ---
 
@@ -86,5 +83,5 @@ Me caracterizo por construir productos bien estructurados desde la primera versi
 ---
 
 <div align="center">
-  <sub>📍 Pereira, Colombia · Disponible para proyectos freelance</sub>
+  <sub>📍 Pereira, Colombia · </sub>
 </div>
