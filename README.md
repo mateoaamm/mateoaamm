@@ -14,8 +14,6 @@
 
 ## 👨‍💻 Sobre mí
 
-Ingeniero de Sistemas graduado de la **Universidad Libre Seccional** (2026), con enfoque en el desarrollo de soluciones de software completas, funcionales y listas para producción.
-
 ---
 
 ## 🎓 Formación
