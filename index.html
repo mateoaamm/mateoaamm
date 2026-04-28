@@ -10,32 +10,21 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#F8F7F4;
-  --bg2:#EFEDE8;
-  --ink:#111110;
-  --ink2:#6B6860;
-  --ink3:#A8A59F;
-  --border:#D8D5CE;
-  --accent:#1A1A18;
-  --red:#C0392B;
-  --f-display:'Syne',sans-serif;
-  --f-body:'Instrument Sans',sans-serif;
+  --bg:#F8F7F4;--bg2:#EFEDE8;--ink:#111110;--ink2:#6B6860;--ink3:#A8A59F;
+  --border:#D8D5CE;--f-display:'Syne',sans-serif;--f-body:'Instrument Sans',sans-serif;
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;overflow-x:hidden}
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 2.5rem;height:60px;display:flex;align-items:center;justify-content:space-between;background:rgba(248,247,244,0.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav-logo{font-family:var(--f-display);font-weight:700;font-size:15px;letter-spacing:-0.02em;color:var(--ink)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 2.5rem;height:60px;display:flex;align-items:center;justify-content:space-between;background:rgba(248,247,244,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:var(--f-display);font-weight:700;font-size:15px;color:var(--ink)}
 .nav-links{display:flex;gap:2rem}
-.nav-links a{font-size:13px;color:var(--ink2);text-decoration:none;letter-spacing:0.02em;transition:color .2s}
+.nav-links a{font-size:13px;color:var(--ink2);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--ink)}
-.nav-cta{font-size:13px;padding:7px 18px;border-radius:6px;background:var(--ink);color:var(--bg);text-decoration:none;transition:opacity .2s}
-.nav-cta:hover{opacity:.8}
+.nav-cta{font-size:13px;padding:7px 18px;border-radius:6px;background:var(--ink);color:var(--bg);text-decoration:none}
 
 /* HERO */
-.hero{min-height:100vh;display:flex;align-items:center;padding:7rem 2.5rem 4rem;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(193,57,43,0.06) 0%,transparent 70%);pointer-events:none}
+.hero{min-height:100vh;display:flex;align-items:center;padding:7rem 2.5rem 4rem}
 .hero-inner{max-width:1100px;width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 340px;gap:4rem;align-items:center}
 .hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:1.5rem}
 .hero-tag::before{content:'';width:6px;height:6px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite}
@@ -44,20 +33,18 @@ h1{font-family:var(--f-display);font-size:clamp(42px,6vw,72px);font-weight:800;l
 h1 em{font-style:normal;color:var(--ink3)}
 .hero-desc{font-size:16px;line-height:1.75;color:var(--ink2);max-width:480px;margin-bottom:2rem}
 .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
-.btn-primary{font-family:var(--f-body);font-size:14px;font-weight:500;padding:11px 24px;border-radius:8px;background:var(--ink);color:var(--bg);text-decoration:none;border:none;cursor:pointer;transition:transform .15s,opacity .15s}
-.btn-primary:hover{opacity:.85;transform:translateY(-1px)}
-.btn-outline{font-family:var(--f-body);font-size:14px;font-weight:500;padding:11px 24px;border-radius:8px;background:transparent;color:var(--ink);text-decoration:none;border:1.5px solid var(--border);transition:border-color .2s,transform .15s}
-.btn-outline:hover{border-color:var(--ink);transform:translateY(-1px)}
+.btn-primary{font-family:var(--f-body);font-size:14px;font-weight:500;padding:11px 24px;border-radius:8px;background:var(--ink);color:var(--bg);text-decoration:none;border:none;cursor:pointer}
+.btn-outline{font-family:var(--f-body);font-size:14px;font-weight:500;padding:11px 24px;border-radius:8px;background:transparent;color:var(--ink);text-decoration:none;border:1.5px solid var(--border)}
 
-/* PHOTO CARD */
-.hero-photo-wrap{position:relative}
+/* PHOTO */
 .hero-photo-card{background:var(--bg2);border-radius:20px;border:1px solid var(--border);overflow:hidden;aspect-ratio:3/4;position:relative}
-.hero-photo-card img{width:100%;height:100%;object-fit:cover;object-position:top}
-.photo-badge{position:absolute;bottom:16px;left:16px;right:16px;background:rgba(248,247,244,0.92);backdrop-filter:blur(8px);border-radius:10px;padding:12px 14px;border:1px solid var(--border)}
+.hero-photo-card img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.photo-badge{position:absolute;bottom:16px;left:16px;right:16px;background:rgba(248,247,244,0.95);border-radius:10px;padding:12px 14px;border:1px solid var(--border)}
 .photo-badge-name{font-family:var(--f-display);font-size:14px;font-weight:700;color:var(--ink);margin-bottom:2px}
 .photo-badge-role{font-size:12px;color:var(--ink2)}
 .photo-badge-uni{font-size:11px;color:var(--ink3);margin-top:2px}
-.corner-tag{position:absolute;top:-12px;right:-12px;background:var(--ink);color:var(--bg);font-size:11px;letter-spacing:0.05em;padding:6px 14px;border-radius:99px;font-weight:600}
+.corner-tag{position:absolute;top:-12px;right:-12px;background:var(--ink);color:var(--bg);font-size:11px;letter-spacing:0.05em;padding:6px 14px;border-radius:99px;font-weight:600;z-index:2}
+.hero-photo-wrap{position:relative}
 
 /* SECTIONS */
 section{padding:5rem 2.5rem}
@@ -67,34 +54,33 @@ section{padding:5rem 2.5rem}
 
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-.about-headline{font-family:var(--f-display);font-size:clamp(28px,4vw,42px);font-weight:700;letter-spacing:-0.03em;line-height:1.15;color:var(--ink);margin-bottom:1.5rem}
+.about-headline{font-family:var(--f-display);font-size:clamp(24px,3vw,36px);font-weight:700;letter-spacing:-0.03em;line-height:1.2;color:var(--ink);margin-bottom:1.25rem}
 .about-body{font-size:15px;line-height:1.8;color:var(--ink2)}
 .about-body p+p{margin-top:1rem}
 .stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-top:2rem}
 .stat-item{background:var(--bg);padding:1.25rem 1.5rem}
 .stat-num{font-family:var(--f-display);font-size:32px;font-weight:800;color:var(--ink);letter-spacing:-0.04em}
-.stat-desc{font-size:12px;color:var(--ink3);margin-top:2px;letter-spacing:0.02em}
+.stat-desc{font-size:12px;color:var(--ink3);margin-top:2px}
 
 /* STACK */
 .stack-section{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .stack-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-top:1.5rem}
-.stack-item{background:var(--bg2);padding:1.25rem;display:flex;flex-direction:column;gap:6px;transition:background .2s}
+.stack-item{background:var(--bg2);padding:1.25rem;transition:background .2s}
 .stack-item:hover{background:var(--bg)}
 .stack-item-name{font-size:13px;font-weight:600;color:var(--ink)}
-.stack-item-type{font-size:11px;color:var(--ink3);letter-spacing:0.04em}
+.stack-item-type{font-size:11px;color:var(--ink3);margin-top:4px}
 
 /* PROJECTS */
-.projects-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-top:1.5rem}
-.project-row{background:var(--bg);padding:1.75rem 2rem;border-bottom:1px solid var(--border);display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;text-decoration:none;transition:background .2s;position:relative}
+.projects-list{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-top:1.5rem}
+.project-row{background:var(--bg);padding:1.75rem 2rem;border-bottom:1px solid var(--border);display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;text-decoration:none;transition:background .2s}
 .project-row:last-child{border-bottom:none}
 .project-row:hover{background:var(--bg2)}
-.project-row:hover .proj-arrow{transform:translate(2px,-2px)}
-.proj-num{font-family:var(--f-display);font-size:11px;font-weight:700;color:var(--ink3);margin-bottom:0.5rem;letter-spacing:0.05em}
+.proj-num{font-family:var(--f-display);font-size:11px;font-weight:700;color:var(--ink3);margin-bottom:0.5rem}
 .proj-name{font-family:var(--f-display);font-size:20px;font-weight:700;color:var(--ink);letter-spacing:-0.02em;margin-bottom:0.4rem}
-.proj-desc{font-size:13px;color:var(--ink2);line-height:1.6;max-width:560px;margin-bottom:0.75rem}
+.proj-desc{font-size:13px;color:var(--ink2);line-height:1.6;margin-bottom:0.75rem}
 .proj-tags{display:flex;gap:0.5rem;flex-wrap:wrap}
-.proj-tag{font-size:11px;padding:3px 10px;border-radius:99px;border:1px solid var(--border);color:var(--ink2);letter-spacing:0.02em}
-.proj-arrow{font-size:22px;color:var(--ink3);transition:transform .2s;flex-shrink:0}
+.proj-tag{font-size:11px;padding:3px 10px;border-radius:99px;border:1px solid var(--border);color:var(--ink2)}
+.proj-arrow{font-size:22px;color:var(--ink3);flex-shrink:0}
 
 /* EDUCATION */
 .edu-section{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
@@ -110,41 +96,30 @@ section{padding:5rem 2.5rem}
 .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .contact-headline{font-family:var(--f-display);font-size:clamp(28px,4vw,48px);font-weight:800;letter-spacing:-0.04em;line-height:1.1;color:var(--ink);margin-bottom:1rem}
 .contact-sub{font-size:15px;color:var(--ink2);line-height:1.75;margin-bottom:2rem}
-.contact-links{display:flex;flex-direction:column;gap:1px;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.contact-links{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:14px;overflow:hidden}
 .contact-link{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.5rem;background:var(--bg);text-decoration:none;transition:background .2s;border-bottom:1px solid var(--border)}
 .contact-link:last-child{border-bottom:none}
 .contact-link:hover{background:var(--bg2)}
 .cl-label{font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--ink3);margin-bottom:2px}
 .cl-value{font-size:14px;font-weight:500;color:var(--ink)}
-.cl-arrow{font-size:16px;color:var(--ink3)}
 
-/* FOOTER */
 footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between}
-.footer-copy{font-size:12px;color:var(--ink3)}
-.footer-made{font-size:12px;color:var(--ink3)}
+.footer-copy,.footer-made{font-size:12px;color:var(--ink3)}
 
-/* ANIMATIONS */
-.fade-up{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
-.fade-up.visible{opacity:1;transform:none}
-
-/* RESPONSIVE */
 @media(max-width:768px){
   nav{padding:0 1.25rem}
+  .nav-links{display:none}
   .hero{padding:6rem 1.25rem 3rem}
   .hero-inner{grid-template-columns:1fr;gap:2.5rem}
-  .hero-photo-wrap{order:-1;max-width:280px;margin:0 auto}
-  .about-grid,.contact-inner{grid-template-columns:1fr}
-  .edu-grid{grid-template-columns:1fr}
-  .stats-grid{grid-template-columns:1fr 1fr}
+  .hero-photo-wrap{max-width:280px;margin:0 auto}
+  .about-grid,.contact-inner,.edu-grid{grid-template-columns:1fr}
   section{padding:3.5rem 1.25rem}
   footer{flex-direction:column;gap:0.5rem;text-align:center}
-  .nav-links{display:none}
 }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <span class="nav-logo">Mateo Arroyave</span>
   <div class="nav-links">
@@ -156,7 +131,6 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
   <a href="mailto:mate_oam@hotmail.com" class="nav-cta">Contactar</a>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
     <div>
@@ -169,9 +143,9 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
       </div>
     </div>
     <div class="hero-photo-wrap">
-      <div class="corner-tag">ISC · 2026</div>
+      <span class="corner-tag">ISC · 2026</span>
       <div class="hero-photo-card">
-        <img src="foto_perfil.png" alt="Mateo Arroyave Martínez" onerror="this.style.display='none'"/>
+        <img src="foto_perfil.png" alt="Mateo Arroyave Martínez"/>
         <div class="photo-badge">
           <div class="photo-badge-name">Mateo Arroyave M.</div>
           <div class="photo-badge-role">Ingeniero de Sistemas</div>
@@ -182,7 +156,6 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="container">
     <div class="section-label">Sobre mí</div>
@@ -191,8 +164,8 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
         <h2 class="about-headline">Desarrollo software que resuelve problemas reales</h2>
         <div class="about-body">
           <p>Soy Ingeniero de Sistemas con experiencia en el desarrollo de aplicaciones web y de escritorio. Trabajo con un stack moderno que abarca desde el frontend hasta la infraestructura.</p>
-          <p>Actualmente asociado con <strong>Asgard Labs</strong>, donde participo en proyectos de desarrollo para clientes en Colombia y Estados Unidos. Me enfoco en entregar productos bien estructurados, documentados y listos para escalar.</p>
-          <p>Cuento además con formación en Inteligencia Artificial Aplicada, lo que me permite integrar soluciones de IA en los proyectos que desarrollo.</p>
+          <p>Actualmente asociado con <strong>Asgard Labs</strong>, donde participo en proyectos para clientes en Colombia y Estados Unidos. Me enfoco en entregar productos bien estructurados, documentados y listos para escalar.</p>
+          <p>Cuento con formación en <strong>Inteligencia Artificial Aplicada</strong>, lo que me permite integrar soluciones de IA en los proyectos que desarrollo.</p>
         </div>
       </div>
       <div>
@@ -219,7 +192,6 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
   </div>
 </section>
 
-<!-- STACK -->
 <section class="stack-section">
   <div class="container">
     <div class="section-label">Stack tecnológico</div>
@@ -238,7 +210,6 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <div class="container">
     <div class="section-label">Proyectos destacados</div>
@@ -249,11 +220,7 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
           <div class="proj-num">01</div>
           <div class="proj-name">Variedades Nacho</div>
           <p class="proj-desc">Sistema de punto de venta completo con módulo de gestión de arriendos, contabilidad y soporte de impresión térmica 80mm. Aplicación de escritorio lista para producción.</p>
-          <div class="proj-tags">
-            <span class="proj-tag">Electron</span>
-            <span class="proj-tag">Node.js</span>
-            <span class="proj-tag">Desktop App</span>
-          </div>
+          <div class="proj-tags"><span class="proj-tag">Electron</span><span class="proj-tag">Node.js</span><span class="proj-tag">Desktop App</span></div>
         </div>
         <div class="proj-arrow">↗</div>
       </a>
@@ -262,13 +229,8 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
         <div>
           <div class="proj-num">02</div>
           <div class="proj-name">ProtectGo</div>
-          <p class="proj-desc">Plataforma web para aseguradora de camioneros en EE.UU. Frontend moderno sobre Next.js 14 con TypeScript y backend en FastAPI con PostgreSQL.</p>
-          <div class="proj-tags">
-            <span class="proj-tag">Next.js 14</span>
-            <span class="proj-tag">FastAPI</span>
-            <span class="proj-tag">TypeScript</span>
-            <span class="proj-tag">PostgreSQL</span>
-          </div>
+          <p class="proj-desc">Plataforma web para aseguradora de camioneros en EE.UU. Frontend moderno con Next.js 14 y TypeScript, backend en FastAPI con PostgreSQL.</p>
+          <div class="proj-tags"><span class="proj-tag">Next.js 14</span><span class="proj-tag">FastAPI</span><span class="proj-tag">TypeScript</span><span class="proj-tag">PostgreSQL</span></div>
         </div>
         <div class="proj-arrow">↗</div>
       </a>
@@ -278,10 +240,7 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
           <div class="proj-num">03</div>
           <div class="proj-name">Musical Match</div>
           <p class="proj-desc">Plataforma de contratación de artistas musicales para eventos. Interfaz intuitiva con gestión completa de perfiles, búsqueda y contacto.</p>
-          <div class="proj-tags">
-            <span class="proj-tag">TypeScript</span>
-            <span class="proj-tag">React</span>
-          </div>
+          <div class="proj-tags"><span class="proj-tag">TypeScript</span><span class="proj-tag">React</span></div>
         </div>
         <div class="proj-arrow">↗</div>
       </a>
@@ -291,10 +250,7 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
           <div class="proj-num">04</div>
           <div class="proj-name">Optimización de Recursos</div>
           <p class="proj-desc">Implementación de algoritmos de optimización aplicados a la gestión eficiente de recursos computacionales y análisis de datos.</p>
-          <div class="proj-tags">
-            <span class="proj-tag">Python</span>
-            <span class="proj-tag">Algoritmos</span>
-          </div>
+          <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Algoritmos</span></div>
         </div>
         <div class="proj-arrow">↗</div>
       </a>
@@ -304,10 +260,7 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
           <div class="proj-num">05</div>
           <div class="proj-name">Métodos Numéricos</div>
           <p class="proj-desc">Implementación y visualización de métodos numéricos clásicos: bisección, Newton-Raphson, Gauss-Seidel y más, con interfaz web interactiva.</p>
-          <div class="proj-tags">
-            <span class="proj-tag">Python</span>
-            <span class="proj-tag">HTML</span>
-          </div>
+          <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">HTML</span></div>
         </div>
         <div class="proj-arrow">↗</div>
       </a>
@@ -316,7 +269,6 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
   </div>
 </section>
 
-<!-- EDUCATION -->
 <section class="edu-section" id="education">
   <div class="container">
     <div class="section-label">Formación académica</div>
@@ -337,7 +289,6 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="container">
     <div class="section-label">Contacto</div>
@@ -349,47 +300,26 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
       </div>
       <div class="contact-links">
         <a class="contact-link" href="mailto:mate_oam@hotmail.com">
-          <div>
-            <div class="cl-label">Email</div>
-            <div class="cl-value">mate_oam@hotmail.com</div>
-          </div>
-          <span class="cl-arrow">↗</span>
+          <div><div class="cl-label">Email</div><div class="cl-value">mate_oam@hotmail.com</div></div>
+          <span>↗</span>
         </a>
         <a class="contact-link" href="https://www.linkedin.com/in/mateo-arroyave-57765b391/" target="_blank">
-          <div>
-            <div class="cl-label">LinkedIn</div>
-            <div class="cl-value">mateo-arroyave</div>
-          </div>
-          <span class="cl-arrow">↗</span>
+          <div><div class="cl-label">LinkedIn</div><div class="cl-value">mateo-arroyave</div></div>
+          <span>↗</span>
         </a>
         <a class="contact-link" href="https://github.com/mateoaamm" target="_blank">
-          <div>
-            <div class="cl-label">GitHub</div>
-            <div class="cl-value">github.com/mateoaamm</div>
-          </div>
-          <span class="cl-arrow">↗</span>
+          <div><div class="cl-label">GitHub</div><div class="cl-value">github.com/mateoaamm</div></div>
+          <span>↗</span>
         </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <span class="footer-copy">© 2026 Mateo Arroyave Martínez · Pereira, Colombia</span>
   <span class="footer-made">Ingeniero de Sistemas · Asgard Labs</span>
 </footer>
 
-<script>
-const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible')}})},{threshold:0.1});
-document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
-document.querySelectorAll('.project-row,.edu-card,.stat-item,.stack-item').forEach((el,i)=>{
-  el.style.opacity='0';
-  el.style.transform='translateY(20px)';
-  el.style.transition=`opacity .5s ease ${i*0.05}s, transform .5s ease ${i*0.05}s`;
-  observer.observe(el);
-  el.classList.add('fade-up');
-});
-</script>
 </body>
 </html>
