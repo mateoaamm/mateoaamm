@@ -24,7 +24,7 @@ Ingeniero de Sistemas **Universidad Libre Seccional Pereira**
 | Título | Institución | Año |
 | --- | --- | --- |
 | Ingeniero de Sistemas | Universidad Libre Seccional Pereira | 2026 |
-| Diplomado en Inteligencia Artificial Aplicada · 120h | Universidad Libre · Facultad de Ingeniería | 2026 |
+| Diplomado en Inteligencia Artificial Aplicada| Universidad Libre | 2026 |
 
 ---
 
