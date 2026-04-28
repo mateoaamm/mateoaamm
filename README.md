@@ -15,7 +15,7 @@
 
 ## 👨‍💻 Sobre mí
 
-Ingeniero de Sistemas **Universidad Libre Seccional Pereira** 
+Ingeniero de Sistemas **Universidad Libre** 
 
 ---
 
