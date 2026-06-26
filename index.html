@@ -3,41 +3,55 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Mateo Arroyave — Ingeniero de Sistemas</title>
+<title>Mateo Arroyave — Systems Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#F8F7F4;--bg2:#EFEDE8;--ink:#111110;--ink2:#6B6860;--ink3:#A8A59F;--border:#D8D5CE;--f-display:'Syne',sans-serif;--f-body:'Instrument Sans',sans-serif;}
+:root{--bg:#F8F7F4;--bg2:#EFEDE8;--ink:#111110;--ink2:#6B6860;--ink3:#A8A59F;--border:#D8D5CE;--accent:#C0392B;--f-display:'Syne',sans-serif;--f-body:'Instrument Sans',sans-serif;}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 2.5rem;height:60px;display:flex;align-items:center;justify-content:space-between;background:rgba(248,247,244,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav-logo{font-family:var(--f-display);font-weight:700;font-size:15px;color:var(--ink)}
-.nav-links{display:flex;gap:2rem}
-.nav-links a{font-size:13px;color:var(--ink2);text-decoration:none;transition:color .2s}
-.nav-links a:hover{color:var(--ink)}
-.nav-cta{font-size:13px;padding:7px 18px;border-radius:6px;background:var(--ink);color:var(--bg);text-decoration:none}
-.hero{min-height:100vh;display:flex;align-items:center;padding:7rem 2.5rem 4rem}
-.hero-inner{max-width:1100px;width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 340px;gap:4rem;align-items:center}
+::selection{background:var(--ink);color:var(--bg)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 2.5rem;height:60px;display:flex;align-items:center;justify-content:space-between;background:rgba(248,247,244,0.8);backdrop-filter:blur(16px);border-bottom:1px solid transparent;transition:border-color .3s,background .3s}
+nav.scrolled{border-bottom-color:var(--border);background:rgba(248,247,244,0.92)}
+.nav-logo{font-family:var(--f-display);font-weight:700;font-size:15px;color:var(--ink);text-decoration:none}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links a{font-size:13px;color:var(--ink2);text-decoration:none;transition:color .2s;position:relative}
+.nav-links a:not(.lang-btn)::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:1.5px;background:var(--ink);transition:width .25s}
+.nav-links a:not(.lang-btn):hover{color:var(--ink)}
+.nav-links a:not(.lang-btn):hover::after{width:100%}
+.nav-cta{font-size:13px;padding:7px 18px;border-radius:6px;background:var(--ink);color:var(--bg);text-decoration:none;transition:transform .15s,opacity .15s}
+.nav-cta:hover{transform:translateY(-1px);opacity:.88}
+.lang-btn{font-size:12px;font-weight:600;padding:5px 12px;border-radius:99px;border:1.5px solid var(--border);background:transparent;color:var(--ink);cursor:pointer;font-family:var(--f-body);letter-spacing:0.03em;transition:all .2s}
+.lang-btn:hover{border-color:var(--ink);background:var(--ink);color:var(--bg)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:7rem 2.5rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-300px;right:-200px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(192,57,43,0.05) 0%,transparent 65%);pointer-events:none;animation:float 8s ease-in-out infinite}
+.hero::after{content:'';position:absolute;bottom:-200px;left:-150px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(120,120,180,0.04) 0%,transparent 65%);pointer-events:none;animation:float 10s ease-in-out infinite reverse}
+@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(-20px,20px)}}
+.hero-inner{max-width:1100px;width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 340px;gap:4rem;align-items:center;position:relative;z-index:1}
 .hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:1.5rem}
-.hero-tag::before{content:'';width:6px;height:6px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-h1{font-family:var(--f-display);font-size:clamp(42px,6vw,72px);font-weight:800;line-height:1.0;letter-spacing:-0.04em;color:var(--ink);margin-bottom:1.5rem}
-h1 em{font-style:normal;color:var(--ink3)}
+.hero-tag::before{content:'';width:6px;height:6px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite;box-shadow:0 0 0 0 rgba(34,197,94,0.4)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,0.4)}70%{box-shadow:0 0 0 8px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+h1{font-family:var(--f-display);font-size:clamp(42px,6vw,76px);font-weight:800;line-height:0.98;letter-spacing:-0.04em;color:var(--ink);margin-bottom:1.5rem}
+h1 em{font-style:normal;color:var(--ink3);transition:color .3s}
+h1:hover em{color:var(--accent)}
 .hero-desc{font-size:16px;line-height:1.75;color:var(--ink2);max-width:480px;margin-bottom:2rem}
 .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
-.btn-primary{font-family:var(--f-body);font-size:14px;font-weight:500;padding:11px 24px;border-radius:8px;background:var(--ink);color:var(--bg);text-decoration:none;border:none;cursor:pointer}
-.btn-outline{font-family:var(--f-body);font-size:14px;font-weight:500;padding:11px 24px;border-radius:8px;background:transparent;color:var(--ink);text-decoration:none;border:1.5px solid var(--border)}
+.btn-primary{font-family:var(--f-body);font-size:14px;font-weight:500;padding:12px 26px;border-radius:8px;background:var(--ink);color:var(--bg);text-decoration:none;border:none;cursor:pointer;transition:transform .15s,opacity .15s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{transform:translateY(-2px);opacity:.9}
+.btn-outline{font-family:var(--f-body);font-size:14px;font-weight:500;padding:12px 26px;border-radius:8px;background:transparent;color:var(--ink);text-decoration:none;border:1.5px solid var(--border);transition:border-color .2s,transform .15s}
+.btn-outline:hover{border-color:var(--ink);transform:translateY(-2px)}
 .hero-photo-wrap{position:relative}
-.hero-photo-card{background:var(--bg2);border-radius:20px;border:1px solid var(--border);overflow:hidden;aspect-ratio:3/4;position:relative}
+.hero-photo-card{background:var(--bg2);border-radius:20px;border:1px solid var(--border);overflow:hidden;aspect-ratio:3/4;position:relative;box-shadow:0 20px 50px -20px rgba(0,0,0,0.18);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s}
+.hero-photo-card:hover{transform:translateY(-6px) rotate(-0.5deg);box-shadow:0 30px 60px -20px rgba(0,0,0,0.25)}
 .hero-photo-card img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
-.photo-badge{position:absolute;bottom:16px;left:16px;right:16px;background:rgba(248,247,244,0.95);border-radius:10px;padding:12px 14px;border:1px solid var(--border)}
+.photo-badge{position:absolute;bottom:16px;left:16px;right:16px;background:rgba(248,247,244,0.95);backdrop-filter:blur(8px);border-radius:10px;padding:12px 14px;border:1px solid var(--border)}
 .photo-badge-name{font-family:var(--f-display);font-size:14px;font-weight:700;color:var(--ink);margin-bottom:2px}
 .photo-badge-role{font-size:12px;color:var(--ink2)}
 .photo-badge-uni{font-size:11px;color:var(--ink3);margin-top:2px}
 .corner-tag{position:absolute;top:12px;right:12px;background:var(--ink);color:var(--bg);font-size:11px;letter-spacing:0.05em;padding:6px 14px;border-radius:99px;font-weight:600;z-index:2}
-section{padding:5rem 2.5rem}
+section{padding:5.5rem 2.5rem}
 .container{max-width:1100px;margin:0 auto}
 .section-label{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink3);font-weight:600;margin-bottom:2rem;display:flex;align-items:center;gap:12px}
 .section-label::after{content:'';flex:1;height:1px;background:var(--border)}
@@ -46,45 +60,60 @@ section{padding:5rem 2.5rem}
 .about-body{font-size:15px;line-height:1.8;color:var(--ink2)}
 .about-body p+p{margin-top:1rem}
 .stats-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-top:2rem}
-.stat-item{background:var(--bg);padding:1.25rem 1.5rem}
-.stat-num{font-family:var(--f-display);font-size:32px;font-weight:800;color:var(--ink);letter-spacing:-0.04em}
-.stat-desc{font-size:12px;color:var(--ink3);margin-top:2px}
+.stat-item{background:var(--bg);padding:1.5rem;transition:background .25s}
+.stat-item:hover{background:var(--bg2)}
+.stat-num{font-family:var(--f-display);font-size:38px;font-weight:800;color:var(--ink);letter-spacing:-0.04em;line-height:1}
+.stat-desc{font-size:12px;color:var(--ink3);margin-top:6px}
 .stack-section{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .stack-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-top:1.5rem}
-.stack-item{background:var(--bg2);padding:1.25rem;transition:background .2s}
-.stack-item:hover{background:var(--bg)}
+.stack-item{background:var(--bg2);padding:1.25rem;transition:background .25s,transform .25s}
+.stack-item:hover{background:var(--bg);transform:scale(1.02);position:relative;z-index:1}
 .stack-item-name{font-size:13px;font-weight:600;color:var(--ink)}
 .stack-item-type{font-size:11px;color:var(--ink3);margin-top:4px}
 .projects-list{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-top:1.5rem}
-.project-row{background:var(--bg);padding:1.75rem 2rem;border-bottom:1px solid var(--border);display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;text-decoration:none;transition:background .2s}
+.project-row{background:var(--bg);padding:1.75rem 2rem;border-bottom:1px solid var(--border);display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;text-decoration:none;transition:background .25s,padding-left .25s}
 .project-row:last-child{border-bottom:none}
-.project-row:hover{background:var(--bg2)}
-.proj-num{font-family:var(--f-display);font-size:11px;font-weight:700;color:var(--ink3);margin-bottom:0.5rem}
-.proj-name{font-family:var(--f-display);font-size:20px;font-weight:700;color:var(--ink);letter-spacing:-0.02em;margin-bottom:0.4rem}
-.proj-desc{font-size:13px;color:var(--ink2);line-height:1.6;margin-bottom:0.75rem}
+.project-row:hover{background:var(--bg2);padding-left:2.5rem}
+.project-row:hover .proj-arrow{transform:translate(4px,-4px);color:var(--ink)}
+.project-row:hover .proj-name{color:var(--accent)}
+.proj-num{font-family:var(--f-display);font-size:11px;font-weight:700;color:var(--ink3);margin-bottom:0.5rem;letter-spacing:0.05em}
+.proj-name{font-family:var(--f-display);font-size:21px;font-weight:700;color:var(--ink);letter-spacing:-0.02em;margin-bottom:0.4rem;transition:color .25s}
+.proj-desc{font-size:13px;color:var(--ink2);line-height:1.6;margin-bottom:0.75rem;max-width:600px}
 .proj-tags{display:flex;gap:0.5rem;flex-wrap:wrap}
-.proj-tag{font-size:11px;padding:3px 10px;border-radius:99px;border:1px solid var(--border);color:var(--ink2)}
-.proj-arrow{font-size:22px;color:var(--ink3);flex-shrink:0}
+.proj-tag{font-size:11px;padding:3px 10px;border-radius:99px;border:1px solid var(--border);color:var(--ink2);transition:border-color .2s,color .2s}
+.project-row:hover .proj-tag{border-color:var(--ink3)}
+.proj-arrow{font-size:24px;color:var(--ink3);flex-shrink:0;transition:transform .25s,color .25s}
 .edu-section{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1.5rem}
-.edu-card{background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:1.75rem;position:relative;overflow:hidden}
-.edu-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--ink)}
+.edu-card{background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:1.75rem;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.edu-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px -16px rgba(0,0,0,0.15)}
+.edu-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--ink);transition:width .25s}
+.edu-card:hover::before{width:6px}
 .edu-year{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:0.75rem}
 .edu-degree{font-family:var(--f-display);font-size:18px;font-weight:700;color:var(--ink);letter-spacing:-0.02em;margin-bottom:0.4rem}
 .edu-inst{font-size:13px;color:var(--ink2)}
 .edu-detail{font-size:12px;color:var(--ink3);margin-top:0.5rem}
 .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.contact-headline{font-family:var(--f-display);font-size:clamp(28px,4vw,46px);font-weight:800;letter-spacing:-0.04em;line-height:1.1;color:var(--ink);margin-bottom:1rem}
 .contact-sub{font-size:15px;color:var(--ink2);line-height:1.75;margin-bottom:2rem}
 .contact-links{display:flex;flex-direction:column;border:1px solid var(--border);border-radius:14px;overflow:hidden}
-.contact-link{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.5rem;background:var(--bg);text-decoration:none;transition:background .2s;border-bottom:1px solid var(--border)}
+.contact-link{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.5rem;background:var(--bg);text-decoration:none;transition:background .25s,padding-left .25s;border-bottom:1px solid var(--border)}
 .contact-link:last-child{border-bottom:none}
-.contact-link:hover{background:var(--bg2)}
+.contact-link:hover{background:var(--bg2);padding-left:1.85rem}
+.contact-link:hover .cl-arrow{transform:translate(3px,-3px);color:var(--ink)}
 .cl-label{font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:var(--ink3);margin-bottom:2px}
 .cl-value{font-size:14px;font-weight:500;color:var(--ink)}
+.cl-arrow{font-size:16px;color:var(--ink3);transition:transform .25s,color .25s}
 footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between}
 .footer-copy,.footer-made{font-size:12px;color:var(--ink3)}
+[data-lang]{display:none}
+[data-lang].active{display:inline}
+.block[data-lang]{display:none}
+.block[data-lang].active{display:block}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
+.reveal.visible{opacity:1;transform:none}
 @media(max-width:768px){
-  nav{padding:0 1.25rem}.nav-links{display:none}
+  nav{padding:0 1.25rem}.nav-links a:not(.lang-btn){display:none}
   .hero{padding:6rem 1.25rem 3rem}
   .hero-inner{grid-template-columns:1fr;gap:2.5rem}
   .hero-photo-wrap{max-width:280px;margin:0 auto}
@@ -96,26 +125,33 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
 </head>
 <body>
 
-<nav>
-  <span class="nav-logo">Mateo Arroyave</span>
+<nav id="nav">
+  <a href="#" class="nav-logo">Mateo Arroyave</a>
   <div class="nav-links">
-    <a href="#about">Sobre mí</a>
-    <a href="#projects">Proyectos</a>
-    <a href="#education">Formación</a>
-    <a href="#contact">Contacto</a>
+    <a href="#about"><span data-lang="es" class="active">Sobre mí</span><span data-lang="en">About</span></a>
+    <a href="#projects"><span data-lang="es" class="active">Proyectos</span><span data-lang="en">Projects</span></a>
+    <a href="#education"><span data-lang="es" class="active">Formación</span><span data-lang="en">Education</span></a>
+    <a href="#contact"><span data-lang="es" class="active">Contacto</span><span data-lang="en">Contact</span></a>
+    <button class="lang-btn" onclick="toggleLang()">EN</button>
   </div>
-  <a href="mailto:mate_oam@hotmail.com" class="nav-cta">Contactar</a>
+  <a href="mailto:mate_oam@hotmail.com" class="nav-cta"><span data-lang="es" class="active">Contactar</span><span data-lang="en">Contact</span></a>
 </nav>
 
 <section class="hero">
   <div class="hero-inner">
     <div>
-      <div class="hero-tag">Disponible para proyectos</div>
+      <div class="hero-tag">
+        <span data-lang="es" class="active">Disponible para proyectos</span>
+        <span data-lang="en">Available for projects</span>
+      </div>
       <h1>Mateo<br/>Arroyave<br/><em>Martínez</em></h1>
-      <p class="hero-desc">Ingeniero de Sistemas graduado de la Universidad Libre. Construyo soluciones de software completas — desde aplicaciones de escritorio hasta plataformas web empresariales.</p>
+      <p class="hero-desc">
+        <span data-lang="es" class="active">Ingeniero de Sistemas con enfoque en <strong>Full Stack Development</strong> e <strong>Inteligencia Artificial</strong>. Construyo soluciones escalables y de alto impacto.</span>
+        <span data-lang="en">Systems Engineer focused on <strong>Full Stack Development</strong> and <strong>Artificial Intelligence</strong>. I build scalable, high-impact solutions.</span>
+      </p>
       <div class="hero-actions">
-        <a href="#projects" class="btn-primary">Ver proyectos</a>
-        <a href="#contact" class="btn-outline">Contactar</a>
+        <a href="#projects" class="btn-primary"><span data-lang="es" class="active">Ver proyectos</span><span data-lang="en">View projects</span> →</a>
+        <a href="#contact" class="btn-outline"><span data-lang="es" class="active">Contactar</span><span data-lang="en">Contact me</span></a>
       </div>
     </div>
     <div class="hero-photo-wrap">
@@ -124,7 +160,10 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
         <img src="foto_perfil.png" alt="Mateo Arroyave Martínez"/>
         <div class="photo-badge">
           <div class="photo-badge-name">Mateo Arroyave M.</div>
-          <div class="photo-badge-role">Ingeniero de Sistemas</div>
+          <div class="photo-badge-role">
+            <span data-lang="es" class="active">Ingeniero de Sistemas</span>
+            <span data-lang="en">Systems Engineer</span>
+          </div>
           <div class="photo-badge-uni">Universidad Libre</div>
         </div>
       </div>
@@ -133,21 +172,41 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
 </section>
 
 <section id="about">
-  <div class="container">
-    <div class="section-label">Sobre mí</div>
+  <div class="container reveal">
+    <div class="section-label">
+      <span data-lang="es" class="active">Sobre mí</span>
+      <span data-lang="en">About me</span>
+    </div>
     <div class="about-grid">
       <div>
-        <h2 class="about-headline">Desarrollo software que resuelve problemas reales</h2>
+        <h2 class="about-headline">
+          <span data-lang="es" class="active">Desarrollo software que resuelve problemas reales</span>
+          <span data-lang="en">I build software that solves real problems</span>
+        </h2>
         <div class="about-body">
-          <p>Soy Ingeniero de Sistemas con experiencia en el desarrollo de aplicaciones web y de escritorio. Trabajo con un stack moderno que abarca desde el frontend hasta la infraestructura.</p>
-          <p>Cuento con formación en <strong>Inteligencia Artificial Aplicada</strong>, lo que me permite integrar soluciones de IA en los proyectos que desarrollo.</p>
+          <div class="block active" data-lang="es">
+            <p>Soy Ingeniero de Sistemas con experiencia en el desarrollo de aplicaciones web y de escritorio. Trabajo con un stack moderno que abarca desde el frontend hasta la infraestructura.</p>
+            <p>Cuento con formación especializada en <strong>Inteligencia Artificial Aplicada</strong> (120 horas) por la Universidad Libre.</p>
+          </div>
+          <div class="block" data-lang="en">
+            <p>I'm a Systems Engineer with experience building web and desktop applications. I work with a modern stack spanning from frontend to infrastructure.</p>
+            <p>I have specialized training in <strong>Applied Artificial Intelligence</strong> (120 hours) from Universidad Libre.</p>
+          </div>
         </div>
       </div>
       <div>
-        <div class="stats-grid">
-          <div class="stat-item">
+        <div class="stats-grid" style="grid-template-columns:repeat(3,1fr)">
+          <div class="stat-item" style="text-align:center">
             <div class="stat-num">14+</div>
-            <div class="stat-desc">Stack tecnológico</div>
+            <div class="stat-desc"><span data-lang="es" class="active">Tecnologías</span><span data-lang="en">Technologies</span></div>
+          </div>
+          <div class="stat-item" style="text-align:center">
+            <div class="stat-num">9+</div>
+            <div class="stat-desc"><span data-lang="es" class="active">Proyectos</span><span data-lang="en">Projects</span></div>
+          </div>
+          <div class="stat-item" style="text-align:center">
+            <div class="stat-num">120h</div>
+            <div class="stat-desc"><span data-lang="es" class="active">Diplomado IA</span><span data-lang="en">AI Diploma</span></div>
           </div>
         </div>
       </div>
@@ -156,36 +215,42 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
 </section>
 
 <section class="stack-section">
-  <div class="container">
-    <div class="section-label">Stack tecnológico</div>
+  <div class="container reveal">
+    <div class="section-label">
+      <span data-lang="es" class="active">Stack tecnológico</span>
+      <span data-lang="en">Tech stack</span>
+    </div>
     <div class="stack-grid">
       <div class="stack-item"><div class="stack-item-name">Python</div><div class="stack-item-type">Backend</div></div>
       <div class="stack-item"><div class="stack-item-name">FastAPI</div><div class="stack-item-type">Backend</div></div>
       <div class="stack-item"><div class="stack-item-name">Flask</div><div class="stack-item-type">Backend</div></div>
       <div class="stack-item"><div class="stack-item-name">React</div><div class="stack-item-type">Frontend</div></div>
       <div class="stack-item"><div class="stack-item-name">Next.js</div><div class="stack-item-type">Frontend</div></div>
-      <div class="stack-item"><div class="stack-item-name">TypeScript</div><div class="stack-item-type">Lenguaje</div></div>
-      <div class="stack-item"><div class="stack-item-name">JavaScript</div><div class="stack-item-type">Lenguaje</div></div>
+      <div class="stack-item"><div class="stack-item-name">TypeScript</div><div class="stack-item-type"><span data-lang="es" class="active">Lenguaje</span><span data-lang="en">Language</span></div></div>
+      <div class="stack-item"><div class="stack-item-name">JavaScript</div><div class="stack-item-type"><span data-lang="es" class="active">Lenguaje</span><span data-lang="en">Language</span></div></div>
       <div class="stack-item"><div class="stack-item-name">Node.js</div><div class="stack-item-type">Runtime</div></div>
       <div class="stack-item"><div class="stack-item-name">Electron</div><div class="stack-item-type">Desktop</div></div>
-      <div class="stack-item"><div class="stack-item-name">PostgreSQL</div><div class="stack-item-type">Base de datos</div></div>
-      <div class="stack-item"><div class="stack-item-name">Docker</div><div class="stack-item-type">Infraestructura</div></div>
+      <div class="stack-item"><div class="stack-item-name">PostgreSQL</div><div class="stack-item-type"><span data-lang="es" class="active">Base de datos</span><span data-lang="en">Database</span></div></div>
+      <div class="stack-item"><div class="stack-item-name">Docker</div><div class="stack-item-type"><span data-lang="es" class="active">Infraestructura</span><span data-lang="en">Infrastructure</span></div></div>
       <div class="stack-item"><div class="stack-item-name">HTML · CSS</div><div class="stack-item-type">Frontend</div></div>
       <div class="stack-item"><div class="stack-item-name">PWA</div><div class="stack-item-type">Web Apps</div></div>
-      <div class="stack-item"><div class="stack-item-name">Claude AI</div><div class="stack-item-type">IA · Productividad</div></div>
+      <div class="stack-item"><div class="stack-item-name">Claude AI</div><div class="stack-item-type"><span data-lang="es" class="active">IA · Productividad</span><span data-lang="en">AI · Productivity</span></div></div>
     </div>
   </div>
 </section>
 
 <section id="projects">
-  <div class="container">
-    <div class="section-label">Proyectos destacados</div>
+  <div class="container reveal">
+    <div class="section-label">
+      <span data-lang="es" class="active">Proyectos destacados</span>
+      <span data-lang="en">Featured projects</span>
+    </div>
     <div class="projects-list">
       <a class="project-row" href="https://github.com/mateoaamm/canchaya" target="_blank">
         <div>
           <div class="proj-num">01 · 2026</div>
           <div class="proj-name">Canchaya</div>
-          <p class="proj-desc">Proyecto de desarrollo en Python — sistema backend con lógica de negocio y procesamiento de datos.</p>
+          <p class="proj-desc"><span data-lang="es" class="active">Sistema backend con lógica de negocio y procesamiento de datos.</span><span data-lang="en">Backend system with business logic and data processing.</span></p>
           <div class="proj-tags"><span class="proj-tag">Python</span></div>
         </div>
         <div class="proj-arrow">↗</div>
@@ -194,7 +259,7 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
         <div>
           <div class="proj-num">02 · 2026</div>
           <div class="proj-name">Album FIFA 2026</div>
-          <p class="proj-desc">PWA para el seguimiento del álbum de figuritas del Mundial 2026. Funciona offline con IndexedDB, soporte bilingüe ES/EN y seguimiento de 1025+ stickers.</p>
+          <p class="proj-desc"><span data-lang="es" class="active">PWA de seguimiento del álbum del Mundial 2026. Offline con IndexedDB, bilingüe ES/EN y 1025+ stickers.</span><span data-lang="en">World Cup 2026 sticker album tracker PWA. Offline with IndexedDB, bilingual ES/EN, 1025+ stickers.</span></p>
           <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JavaScript</span><span class="proj-tag">PWA</span><span class="proj-tag">IndexedDB</span></div>
         </div>
         <div class="proj-arrow">↗</div>
@@ -203,7 +268,7 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
         <div>
           <div class="proj-num">03 · 2025</div>
           <div class="proj-name">ProtectGo 2.0</div>
-          <p class="proj-desc">Plataforma optimizada de seguros comerciales para camioneros en EE.UU. Frontend con Next.js y TypeScript, backend en FastAPI con PostgreSQL.</p>
+          <p class="proj-desc"><span data-lang="es" class="active">Plataforma de seguros comerciales para camioneros en EE.UU. Full stack moderno.</span><span data-lang="en">Commercial insurance platform for US truckers. Modern full stack.</span></p>
           <div class="proj-tags"><span class="proj-tag">TypeScript</span><span class="proj-tag">Next.js</span><span class="proj-tag">FastAPI</span><span class="proj-tag">PostgreSQL</span></div>
         </div>
         <div class="proj-arrow">↗</div>
@@ -212,7 +277,7 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
         <div>
           <div class="proj-num">04 · 2025</div>
           <div class="proj-name">Full Stack Web App</div>
-          <p class="proj-desc">Aplicación web Full Stack con frontend en React y backend en Python FastAPI. Arquitectura moderna con separación clara de responsabilidades.</p>
+          <p class="proj-desc"><span data-lang="es" class="active">Aplicación web Full Stack con React y FastAPI. Arquitectura moderna.</span><span data-lang="en">Full Stack web app with React and FastAPI. Modern architecture.</span></p>
           <div class="proj-tags"><span class="proj-tag">JavaScript</span><span class="proj-tag">React</span><span class="proj-tag">FastAPI</span><span class="proj-tag">Python</span></div>
         </div>
         <div class="proj-arrow">↗</div>
@@ -220,8 +285,8 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
       <a class="project-row" href="https://github.com/mateoaamm/proyecto-psp-biblioteca" target="_blank">
         <div>
           <div class="proj-num">05 · 2025</div>
-          <div class="proj-name">Sistema de Gestión de Biblioteca</div>
-          <p class="proj-desc">Sistema de gestión bibliotecaria desarrollado como proyecto PSP (Personal Software Process). Aplicación web con Flask y base de datos.</p>
+          <div class="proj-name"><span data-lang="es" class="active">Sistema de Gestión de Biblioteca</span><span data-lang="en">Library Management System</span></div>
+          <p class="proj-desc"><span data-lang="es" class="active">Sistema de gestión bibliotecaria con metodología PSP. Aplicación web con Flask.</span><span data-lang="en">Library management system built with PSP methodology. Flask web app.</span></p>
           <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Flask</span></div>
         </div>
         <div class="proj-arrow">↗</div>
@@ -229,8 +294,8 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
       <a class="project-row" href="https://github.com/mateoaamm/calculadoraPWA" target="_blank">
         <div>
           <div class="proj-num">06 · 2025</div>
-          <div class="proj-name">Calculadora 3D PWA</div>
-          <p class="proj-desc">Calculadora profesional de costos de impresión 3D como Progressive Web App. Funciona offline y es instalable en cualquier dispositivo.</p>
+          <div class="proj-name"><span data-lang="es" class="active">Calculadora 3D PWA</span><span data-lang="en">3D Printing Calculator PWA</span></div>
+          <p class="proj-desc"><span data-lang="es" class="active">Calculadora de costos de impresión 3D. Offline e instalable.</span><span data-lang="en">3D printing cost calculator. Offline and installable.</span></p>
           <div class="proj-tags"><span class="proj-tag">PWA</span><span class="proj-tag">JavaScript</span><span class="proj-tag">HTML</span></div>
         </div>
         <div class="proj-arrow">↗</div>
@@ -239,7 +304,7 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
         <div>
           <div class="proj-num">07 · 2025</div>
           <div class="proj-name">Musical Match</div>
-          <p class="proj-desc">Plataforma de contratación y booking de artistas musicales para eventos públicos y privados. Gestión de perfiles, búsqueda y contacto.</p>
+          <p class="proj-desc"><span data-lang="es" class="active">Plataforma de contratación y booking de artistas para eventos.</span><span data-lang="en">Artist hiring and booking platform for events.</span></p>
           <div class="proj-tags"><span class="proj-tag">TypeScript</span><span class="proj-tag">React</span></div>
         </div>
         <div class="proj-arrow">↗</div>
@@ -247,17 +312,17 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
       <a class="project-row" href="https://github.com/mateoaamm/proyectoOptimizacionRecursos2" target="_blank">
         <div>
           <div class="proj-num">08 · 2025</div>
-          <div class="proj-name">Optimización de Recursos</div>
-          <p class="proj-desc">Implementación de algoritmos de optimización aplicados a la gestión eficiente de recursos computacionales y análisis de datos.</p>
-          <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Algoritmos</span></div>
+          <div class="proj-name"><span data-lang="es" class="active">Optimización de Recursos</span><span data-lang="en">Resource Optimization</span></div>
+          <p class="proj-desc"><span data-lang="es" class="active">Algoritmos de optimización aplicados a recursos computacionales.</span><span data-lang="en">Optimization algorithms for computational resources.</span></p>
+          <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Algorithms</span></div>
         </div>
         <div class="proj-arrow">↗</div>
       </a>
       <a class="project-row" href="https://github.com/mateoaamm/proyectoFinalMetodNum" target="_blank">
         <div>
           <div class="proj-num">09 · 2025</div>
-          <div class="proj-name">Métodos Numéricos</div>
-          <p class="proj-desc">Implementación y visualización de métodos numéricos clásicos: bisección, Newton-Raphson, Gauss-Seidel y más, con interfaz web interactiva.</p>
+          <div class="proj-name"><span data-lang="es" class="active">Métodos Numéricos</span><span data-lang="en">Numerical Methods</span></div>
+          <p class="proj-desc"><span data-lang="es" class="active">Métodos numéricos clásicos con interfaz web interactiva.</span><span data-lang="en">Classic numerical methods with interactive web interface.</span></p>
           <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">HTML</span><span class="proj-tag">Flask</span></div>
         </div>
         <div class="proj-arrow">↗</div>
@@ -267,45 +332,55 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
 </section>
 
 <section class="edu-section" id="education">
-  <div class="container">
-    <div class="section-label">Formación académica</div>
+  <div class="container reveal">
+    <div class="section-label">
+      <span data-lang="es" class="active">Formación académica</span>
+      <span data-lang="en">Education</span>
+    </div>
     <div class="edu-grid">
       <div class="edu-card">
         <div class="edu-year">2026</div>
-        <div class="edu-degree">Ingeniero de Sistemas</div>
+        <div class="edu-degree"><span data-lang="es" class="active">Ingeniero de Sistemas</span><span data-lang="en">Systems Engineer</span></div>
         <div class="edu-inst">Universidad Libre</div>
-        <div class="edu-detail">República de Colombia · Ministerio de Educación Nacional</div>
+        <div class="edu-detail"><span data-lang="es" class="active">República de Colombia · Ministerio de Educación Nacional</span><span data-lang="en">Republic of Colombia · Ministry of National Education</span></div>
       </div>
       <div class="edu-card">
         <div class="edu-year">2025 – 2026</div>
-        <div class="edu-degree">Diplomado en Inteligencia Artificial Aplicada</div>
+        <div class="edu-degree"><span data-lang="es" class="active">Diplomado en Inteligencia Artificial Aplicada</span><span data-lang="en">Diploma in Applied Artificial Intelligence</span></div>
         <div class="edu-inst">Universidad Libre · Facultad de Ingeniería</div>
-        <div class="edu-detail">120 horas · Sede Belmonte</div>
+        <div class="edu-detail"><span data-lang="es" class="active">120 horas · Sede Belmonte</span><span data-lang="en">120 hours · Belmonte Campus</span></div>
       </div>
     </div>
   </div>
 </section>
 
 <section id="contact">
-  <div class="container">
-    <div class="section-label">Contacto</div>
+  <div class="container reveal">
+    <div class="section-label">
+      <span data-lang="es" class="active">Contacto</span>
+      <span data-lang="en">Contact</span>
+    </div>
     <div class="contact-inner">
       <div>
-        <p class="contact-sub">Estoy disponible para proyectos freelance, colaboraciones y oportunidades de trabajo. No dudes en escribirme.</p>
-        <a href="mailto:mate_oam@hotmail.com" class="btn-primary">Enviar mensaje</a>
+        <h2 class="contact-headline"><span data-lang="es" class="active">Construyamos algo</span><span data-lang="en">Let's build something</span></h2>
+        <p class="contact-sub">
+          <span data-lang="es" class="active">Estoy disponible para proyectos freelance, colaboraciones y oportunidades de trabajo. No dudes en escribirme.</span>
+          <span data-lang="en">I'm available for freelance projects, collaborations, and job opportunities. Feel free to reach out.</span>
+        </p>
+        <a href="mailto:mate_oam@hotmail.com" class="btn-primary"><span data-lang="es" class="active">Enviar mensaje</span><span data-lang="en">Send message</span> →</a>
       </div>
       <div class="contact-links">
         <a class="contact-link" href="mailto:mate_oam@hotmail.com">
           <div><div class="cl-label">Email</div><div class="cl-value">mate_oam@hotmail.com</div></div>
-          <span>↗</span>
+          <span class="cl-arrow">↗</span>
         </a>
         <a class="contact-link" href="https://www.linkedin.com/in/mateo-arroyave-57765b391/" target="_blank">
           <div><div class="cl-label">LinkedIn</div><div class="cl-value">mateo-arroyave</div></div>
-          <span>↗</span>
+          <span class="cl-arrow">↗</span>
         </a>
         <a class="contact-link" href="https://github.com/mateoaamm" target="_blank">
           <div><div class="cl-label">GitHub</div><div class="cl-value">github.com/mateoaamm</div></div>
-          <span>↗</span>
+          <span class="cl-arrow">↗</span>
         </a>
       </div>
     </div>
@@ -314,8 +389,24 @@ footer{border-top:1px solid var(--border);padding:2rem 2.5rem;display:flex;align
 
 <footer>
   <span class="footer-copy">© 2026 Mateo Arroyave Martínez · Colombia</span>
-  <span class="footer-made">Ingeniero de Sistemas</span>
+  <span class="footer-made"><span data-lang="es" class="active">Ingeniero de Sistemas</span><span data-lang="en">Systems Engineer</span></span>
 </footer>
+
+<script>
+let currentLang='es';
+function toggleLang(){
+  currentLang=currentLang==='es'?'en':'es';
+  document.querySelectorAll('[data-lang]').forEach(el=>{
+    el.classList.toggle('active',el.dataset.lang===currentLang);
+  });
+  document.querySelector('.lang-btn').textContent=currentLang==='es'?'EN':'ES';
+  document.documentElement.lang=currentLang;
+}
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>20)});
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
 
 </body>
 </html>
